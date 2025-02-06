@@ -8,7 +8,7 @@ function agregar() {
 
     const listaUl = document.getElementById("lista");
     const elementoLista = document.createElement("li");
-    elementoLista.innerText = "El numero es: " + inputValue;
+    elementoLista.innerText = "El numero añadido es: " + inputValue;
     listaUl.appendChild(elementoLista);
 
     suma += Number(inputValue);
@@ -16,7 +16,7 @@ function agregar() {
 
 function sumatoria() {
     const titulo = document.getElementById("titulo");
-    titulo.innerText = "La sumatoria es: " + suma;
+    titulo.innerText = "La suma de los numeros anteriores es: " + suma;
 }
 
 btnAgregar.addEventListener("click", agregar);
